@@ -9,7 +9,7 @@ project(sit_armor_injected)
 # Catkin
 ##############################################################################
 
-find_package(catkin REQUIRED armor_msgs rosjava_build_tools multi_ontology_reference owl_oop scene_identification_tagging)
+find_package(catkin REQUIRED armor_msgs rosjava_build_tools multi_ontology_reference owl_oop scene_identification_tagging armor)
 
 # Set the gradle targets you want catkin's make to run by default, e.g.
 #   catkin_rosjava_setup(installApp)

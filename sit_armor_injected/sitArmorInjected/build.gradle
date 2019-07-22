@@ -18,14 +18,6 @@
 apply plugin: 'application'
 mainClassName = 'org.ros.RosRun'
 
-/* 
- Dependencies can be on external maven artifacts (such as rosjava_core
- here) or on sibling subprojects. Fpr external maven artifact dependencies
- it's convenient to use an open ranged dependency, but restrict it to
- cover the patch version only to avoid breakages due to api changes
- which usually occur on minor and major version numbers.
-*/
-
 repositories {
     maven {
         url "../../../../devel/share/maven/"
@@ -33,13 +25,15 @@ repositories {
 }
 
 dependencies {
-    /* An external maven artifact dependency */
     compile 'org.ros.rosjava_core:rosjava:[0.2,0.3)'
     compile 'org.ros.rosjava_messages:armor_msgs:1.0.0'
+    compile 'org.ros.rosjava_messages:sit_armor_injected_msgs:1.0.0'
+
 
     compile 'it.emarolab.amor:amor:2.2.0'
     compile 'it.emarolab.owloop:owloop:2.0.0'
-    compile 'it.emarolab.sit:sit:1.0.0'
+    compile 'it.emarolab.sit:sit:2.0.0'
+    compile 'it.emarolab.armor:amor_interface_service:0.1.0'
 
     compile group: 'com.github.galigator.openllet', name: 'openllet-owlapi', version: '2.5.1'
     compile group: 'net.sourceforge.owlapi', name: 'owlapi-distribution', version: '5.0.2'
