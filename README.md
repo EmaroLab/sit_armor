@@ -19,7 +19,7 @@ rosservice call /armor_interface_srv "armor_request:
   command: 'LOAD'
   primary_command_spec: 'FILE'
   secondary_command_spec: ''
-  args: ['ros_ws/src/injected_armor_pkgs/scene_identification_tagging/sit/src/main/resources/simpleSIT.owl', 'http://www.emarolab.it/sit/simple', 'true', 'pellet', 'true']" 
+  args: ['src/injected_armor_pkgs/scene_identification_tagging/sit/src/main/resources/simpleSIT.owl', 'http://www.emarolab.it/sit/simple', 'true', 'pellet', 'true']" 
 ```
  - test some simple scenes
 ```
