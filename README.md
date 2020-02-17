@@ -1,5 +1,5 @@
 # The SIT Algorithm Injected in the aRMOR service
-A simple implementation of the Scene Identification and Tagging algorithm (SIT) injected in a ROS Multi Ontology References service (aRMOR).
+A simple implementation of the [Scene Identification and Tagging algorithm (SIT)](https://github.com/EmaroLab/scene_identification_tagging) injected in a ROS Multi Ontology References service (aRMOR).
 
 # How to run
 
@@ -80,3 +80,10 @@ sceneElements:
 learningTreshold: 0.9" 
 
 ```
+
+
+## Contacts
+
+For comment, discussions or support refer to this git repository open issues before to contact us
+ - [luca.buoncompagni@edu.unige.it](mailto:luca.buoncompagni@edu.unige.it).
+
